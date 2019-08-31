@@ -1,0 +1,112 @@
+header{
+    width: 100%;
+    height: 90vh;
+    // background-image: url('../../../images/daniel-zacatenco-sx0cAH8TEYk-unsplash.jpg');
+    // background-color: black;
+    // background-position: 50% 50%;
+    // background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    &::after {
+         content: ""; 
+         background-image: url('../../../images/daniel-zacatenco-sx0cAH8TEYk-unsplash.jpg');
+         background-position: 50% 50%;
+         background-repeat: no-repeat;
+         opacity: 0.6;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         position: absolute;
+         z-index: -1;
+        }
+    .navigation{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .nav{
+            width: 100px;
+            height: 100px;
+            background-color: var(--yellow);
+            padding: 20px 30px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            &_toggle{
+                cursor: pointer;
+                position: relative;
+                height: 20px;
+                width: 30px;
+                transition: all .3s ease 0s;
+                -webkit-transition: all .3s ease 0s;
+                -moz-transition: all .3s ease 0s;
+                -o-transition: all .3s ease 0s;
+                -ms-transition: all .3s ease 0s;
+                background: 0 0;
+                padding: 20px;
+                z-index: 9999; 
+                span{
+                    height: 3px;
+                    width: 20px;
+                    display: block;
+                    background: #000;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    &::before{
+                        content: "";
+                        height: 3px;
+                        width: 30px;
+                        display: block;
+                        background: #000;
+                        right: 0;
+                        top: -10px;
+                        position: absolute;
+                    }
+                    &::after{
+                        content: "";
+                        height: 3px;
+                        width: 30px;
+                        display: block;
+                        background: #000;
+                        right: 0;
+                        top: 10px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+    .main_title{        
+        width: 100%;
+        max-width: 400px;
+        padding: 50px 30px;
+        background-color: var(--purple);
+        color: var(--white);
+        align-self: flex-end;
+        margin: 0 20vw 15vh 0;
+        text-align: center;
+        position: relative;
+        h1{
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 20px;                        
+        }
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--yellow);                
+            left: -35px;
+            bottom: -28px;
+            transform: rotate(180deg);
+            z-index: 1;
+        }
+    }
+}
