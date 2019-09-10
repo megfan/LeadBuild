@@ -3,3 +3,10 @@
     height: 200vh;
     position: relative;
 }
+a.btn{
+    background-color: var(--yellow);
+    color: var(--purple);
+    padding: 10px 30px;
+    text-decoration: none;
+    clip-path: polygon(0 0, 90% 0, 100% 0, 100% 100%, 0 100%);
+}

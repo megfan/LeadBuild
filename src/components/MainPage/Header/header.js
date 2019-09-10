@@ -15,10 +15,12 @@ function Header() {
               </div>
             </div>
         </div>
-        <div className="main_title">
-            <h1>Dream Heaven City</h1>
-            <p>If you are looking at blank cassettes on the web Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt.</p>
-            <a class="btn" href="#/">Details</a>
+        <div className="title_box">
+          <div className="title_text">
+          <h1>Dream Heaven City</h1>
+              <p>If you are looking at blank cassettes on the web Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt.</p>
+              <a class="btn" href="#/">Details</a>
+          </div>            
         </div>
         
     </header>

@@ -1,0 +1,84 @@
+.container{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 20vh auto;
+}
+.about{
+    color: var(--white);
+    .main-content{
+        display: flex;
+        margin-bottom: 10vh;
+        .image_box{
+            max-width: 50%;
+            background-image: url('../../../images/ardalan-hamedani-Kz9tSCGoF1Q-unsplash.jpg');
+            height: 500px;
+            width: 400px;
+            max-width: 500px;
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-position: 0% 100%;
+            position: relative;
+            .image{
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                background-color: var(--yellow);
+                color: black;
+                height: 30%;
+                width: 30%;
+                text-align: center;
+                display: flex;
+                box-sizing: border-box;
+                flex-direction: column;
+                justify-content: center;
+                padding: 24px;
+                & h3{
+                    font-size: 3rem;
+                    font-weight: 700;
+                    margin: 0;
+                }
+                & p{
+                    margin: 0;
+                }
+            }
+        }
+        .text_box{
+            flex: 1;
+            max-width: 50%;
+            margin-left: 30px;
+            & h2{
+                font-size: 0.8rem;
+                color: var(--yellow);
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-family: Roboto;
+            }
+            & h1{
+                font-size: 3rem;
+                font-weight: 300;
+                margin: 0;
+            }
+            & p{
+                font-weight: 300;
+                font-family: Roboto;
+                font-size: 0.8rem;
+                color: #949494;
+                line-height: 20px;
+                margin: 50px 0;
+            }
+        }
+    }
+    .details{
+        display: flex;
+        justify-content: space-between;
+        &_box{
+            padding: 20px 30px;
+            background: var(--light-purple);
+            flex: 1;
+        }
+        &_box:not(:last-of-type){
+            margin-right: 20px;
+        }
+    }
+}
